@@ -11,6 +11,7 @@ public class NotificationController {
 
     @PostMapping
     public String sendNotification(@RequestBody String userName) {
+        
         System.out.println("Email sent to " + userName);
         return "Notification sent!";
     }
